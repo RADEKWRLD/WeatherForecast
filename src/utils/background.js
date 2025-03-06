@@ -1,0 +1,41 @@
+export const weatherBackgrounds = {
+    '晴': 'linear-gradient(135deg, #87CEEB, #00BFFF)',
+    '多云': 'linear-gradient(135deg, #A9A9A9, #6B7280)',
+    '晴间多云': 'linear-gradient(135deg, #B0C4DE, #6B7280)',
+    '大部多云': 'linear-gradient(135deg, #778899, #4B5EAA)',
+    '阴': 'linear-gradient(135deg, #6B7280, #374151)',
+    '阵雨': 'linear-gradient(135deg, #4682B4, #1E3A8A)',
+    '雷阵雨': 'linear-gradient(135deg, #2F4F4F, #191970)',
+    '雷阵雨伴有冰雹': 'linear-gradient(135deg, #483D8B, #191970)',
+    '小雨': 'linear-gradient(135deg, #5F9EA0, #4682B4)',
+    '中雨': 'linear-gradient(135deg, #4682B4, #2F4F4F)',
+    '大雨': 'linear-gradient(135deg, #2F4F4F, #191970)',
+    '暴雨': 'linear-gradient(135deg, #191970, #000080)',
+    '大暴雨': 'linear-gradient(135deg, #000080, #000033)',
+    '特大暴雨': 'linear-gradient(135deg, #000033, #000000)',
+    '冻雨': 'linear-gradient(135deg, #ADD8E6, #4682B4)',
+    '雨夹雪': 'linear-gradient(135deg, #B0E0E6, #778899)',
+    '阵雪': 'linear-gradient(135deg, #E6E6FA, #B0C4DE)',
+    '小雪': 'linear-gradient(135deg, #D3D3D3, #A9A9A9)',
+    '中雪': 'linear-gradient(135deg, #B0C4DE, #778899)',
+    '大雪': 'linear-gradient(135deg, #87CEFA, #4682B4)',
+    '暴雪': 'linear-gradient(135deg, #F0F8FF, #B0E0E6)',
+    '浮尘': 'linear-gradient(135deg, #F4A460, #D2B48C)',
+    '扬沙': 'linear-gradient(135deg, #DAA520, #CD853F)',
+    '沙尘暴': 'linear-gradient(135deg, #CD853F, #8B4513)',
+    '强沙尘暴': 'linear-gradient(135deg, #8B4513, #5C4033)',
+    '雾': 'linear-gradient(135deg, #D3D3D3, #A9A9A9)',
+    '霾': 'linear-gradient(135deg, #BEBEBE, #808080)',
+    '风': 'linear-gradient(135deg, #B0C4DE, #87CEFA)',
+    '大风': 'linear-gradient(135deg, #87CEFA, #4682B4)',
+    '飓风': 'linear-gradient(135deg, #4682B4, #191970)',
+    '热带风暴': 'linear-gradient(135deg, #2F4F4F, #191970)',
+    '龙卷风': 'linear-gradient(135deg, #191970, #000000)',
+    '冷': 'linear-gradient(135deg, #B0E0E6, #4682B4)',
+    '热': 'linear-gradient(135deg, #FF4500, #FFD700)',
+    '未知': 'linear-gradient(135deg, #696969, #181C14)'
+};
+
+export const getBackgroundColor = (weatherText) => {
+    return weatherBackgrounds[weatherText] || '#BDB395';
+};
